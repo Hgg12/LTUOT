@@ -158,14 +158,18 @@
                 <!-- Dynamic Annotation UI Demo -->
                 <div class="lg:w-1/2 mt-10 lg:mt-0">
                     <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-200">
-                        <!-- Pseudo Video Player -->
-                        <div class="bg-gray-900 aspect-video relative flex items-center justify-center">
-                            <i data-lucide="play-circle" class="w-16 h-16 text-white opacity-80 cursor-pointer hover:opacity-100 transition"></i>
-                            <div class="absolute bottom-4 left-4 bg-black bg-opacity-60 text-white text-xs px-2 py-1 rounded">
-                                00:08 / 01:20
-                            </div>
-                            <div class="absolute top-4 right-4 border-2 border-red-500 w-16 h-16 rounded"></div> <!-- Pseudo Bounding Box -->
-                        </div>
+                        <!-- 真实的视频播放器 (Real Video Player) -->
+                        <video 
+                            class="w-full aspect-video object-cover bg-black" 
+                            controls 
+                            muted 
+                            autoplay 
+                            loop 
+                            poster="assets/demo_cover.jpg">
+                            <!-- 将这里的 src 替换为您真实的视频路径，例如 ./videos/demo.mp4 -->
+                            <source src="example\example1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                         <!-- Dynamic Timeline Demo -->
                         <div class="p-6 bg-gray-50">
                             <h5 class="text-sm font-bold text-gray-500 mb-4 uppercase tracking-wider">4-Second Dynamic Timeline</h5>
@@ -206,11 +210,19 @@
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Item 1 -->
-                <div class="group rounded-xl overflow-hidden shadow-lg border border-gray-100 bg-white hover:shadow-xl transition cursor-pointer">
-                    <div class="relative aspect-video bg-blue-900 flex items-center justify-center overflow-hidden">
-                        <div class="absolute inset-0 bg-gradient-to-tr from-cyan-800 to-blue-600 opacity-80 group-hover:scale-105 transition duration-500"></div>
-                        <i data-lucide="play" class="w-12 h-12 text-white relative z-10 opacity-70 group-hover:opacity-100 transition"></i>
-                        <span class="absolute bottom-2 right-2 bg-black bg-opacity-70 text-white text-xs px-2 py-1 rounded">seq_diver_01</span>
+                <div class="group rounded-xl overflow-hidden shadow-lg border border-gray-100 bg-white hover:shadow-xl transition">
+                    <div class="relative aspect-video bg-black overflow-hidden">
+                        <video 
+                            class="w-full h-full object-cover" 
+                            controls 
+                            muted 
+                            loop 
+                            poster="assets/seq_diver_01_cover.jpg">
+                            <!-- 替换为您的真实视频路径 -->
+                            <source src="assets/seq_diver_01.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <span class="absolute top-2 right-2 pointer-events-none bg-black bg-opacity-70 text-white text-xs px-2 py-1 rounded z-10">seq_diver_01</span>
                     </div>
                     <div class="p-5">
                         <h3 class="font-bold text-lg text-gray-900 mb-2">Diver Tracking (Illumination Shift)</h3>
@@ -223,11 +235,19 @@
                 </div>
 
                 <!-- Item 2 -->
-                <div class="group rounded-xl overflow-hidden shadow-lg border border-gray-100 bg-white hover:shadow-xl transition cursor-pointer">
-                    <div class="relative aspect-video bg-blue-900 flex items-center justify-center overflow-hidden">
-                        <div class="absolute inset-0 bg-gradient-to-tr from-teal-800 to-emerald-600 opacity-80 group-hover:scale-105 transition duration-500"></div>
-                        <i data-lucide="play" class="w-12 h-12 text-white relative z-10 opacity-70 group-hover:opacity-100 transition"></i>
-                        <span class="absolute bottom-2 right-2 bg-black bg-opacity-70 text-white text-xs px-2 py-1 rounded">seq_turtle_05</span>
+                <div class="group rounded-xl overflow-hidden shadow-lg border border-gray-100 bg-white hover:shadow-xl transition">
+                    <div class="relative aspect-video bg-black overflow-hidden">
+                        <video 
+                            class="w-full h-full object-cover" 
+                            controls 
+                            muted 
+                            loop 
+                            poster="assets/seq_turtle_05_cover.jpg">
+                            <!-- 替换为您的真实视频路径 -->
+                            <source src="assets/seq_turtle_05.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <span class="absolute top-2 right-2 pointer-events-none bg-black bg-opacity-70 text-white text-xs px-2 py-1 rounded z-10">seq_turtle_05</span>
                     </div>
                     <div class="p-5">
                         <h3 class="font-bold text-lg text-gray-900 mb-2">Marine Life Tracking (Distractors)</h3>
@@ -240,11 +260,19 @@
                 </div>
 
                 <!-- Item 3 -->
-                <div class="group rounded-xl overflow-hidden shadow-lg border border-gray-100 bg-white hover:shadow-xl transition cursor-pointer">
-                    <div class="relative aspect-video bg-blue-900 flex items-center justify-center overflow-hidden">
-                        <div class="absolute inset-0 bg-gradient-to-tr from-indigo-900 to-blue-800 opacity-80 group-hover:scale-105 transition duration-500"></div>
-                        <i data-lucide="play" class="w-12 h-12 text-white relative z-10 opacity-70 group-hover:opacity-100 transition"></i>
-                        <span class="absolute bottom-2 right-2 bg-black bg-opacity-70 text-white text-xs px-2 py-1 rounded">seq_rov_02</span>
+                <div class="group rounded-xl overflow-hidden shadow-lg border border-gray-100 bg-white hover:shadow-xl transition">
+                    <div class="relative aspect-video bg-black overflow-hidden">
+                        <video 
+                            class="w-full h-full object-cover" 
+                            controls 
+                            muted 
+                            loop 
+                            poster="assets/seq_rov_02_cover.jpg">
+                            <!-- 替换为您的真实视频路径 -->
+                            <source src="assets/seq_rov_02.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <span class="absolute top-2 right-2 pointer-events-none bg-black bg-opacity-70 text-white text-xs px-2 py-1 rounded z-10">seq_rov_02</span>
                     </div>
                     <div class="p-5">
                         <h3 class="font-bold text-lg text-gray-900 mb-2">ROV Tracking (Turbid Water)</h3>
