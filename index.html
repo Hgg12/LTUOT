@@ -139,7 +139,7 @@
                                 <h4 class="text-xl font-bold text-gray-900">Global Language Annotation</h4>
                                 <p class="mt-2 text-gray-600">Provides a global description of the target's category, initial appearance, and main colors, which remain relatively stable over time.</p>
                                 <div class="mt-2 bg-blue-50 border-l-4 border-blue-500 p-3 text-sm text-blue-800 rounded-r">
-                                    "A sea turtle with yellow stripes swimming near a coral reef."
+                                    Track the sea turtle as it swims across the sandy ocean floor, navigating between rocks and small fish.
                                 </div>
                             </div>
                         </li>
@@ -173,21 +173,46 @@
                         <!-- Dynamic Timeline Demo -->
                         <div class="p-6 bg-gray-50">
                             <h5 class="text-sm font-bold text-gray-500 mb-4 uppercase tracking-wider">4-Second Dynamic Timeline</h5>
-                            <div class="space-y-4">
+                            <div class="flex flex-col gap-2">
                                 <div class="flex items-center text-sm">
-                                    <span class="w-12 text-gray-400 font-mono">00:00</span>
-                                    <div class="w-3 h-3 rounded-full bg-gray-300 mx-3"></div>
-                                    <div class="flex-1 bg-white p-3 rounded-lg border border-gray-200 text-gray-700">The sea turtle is swimming towards the bottom right, clearly visible.</div>
+                                    <span class="w-12 text-gray-400 font-mono shrink-0">00:00</span>
+                                    <div class="w-3 h-3 rounded-full bg-gray-300 mx-3 shrink-0"></div>
+                                    <div class="flex-1 bg-white p-3 rounded-lg border border-gray-200 text-gray-700">Greenish-brown shell with intricate patterns, sea turtle glides over sandy seabed, surrounded by scattered rocks and distant fish.</div>
                                 </div>
+                                
+                                <!-- 垂直省略号 1 -->
+                                <div class="flex items-center">
+                                    <span class="w-12 shrink-0"></span>
+                                    <div class="w-3 mx-3 shrink-0 flex flex-col items-center space-y-1">
+                                        <div class="w-1 h-1 bg-gray-300 rounded-full"></div>
+                                        <div class="w-1 h-1 bg-gray-300 rounded-full"></div>
+                                        <div class="w-1 h-1 bg-gray-300 rounded-full"></div>
+                                    </div>
+                                    <div class="flex-1"></div>
+                                </div>
+
                                 <div class="flex items-center text-sm">
-                                    <span class="w-12 text-blue-500 font-mono font-bold">00:04</span>
-                                    <div class="w-3 h-3 rounded-full bg-blue-500 mx-3 ring-4 ring-blue-100"></div>
-                                    <div class="flex-1 bg-blue-50 p-3 rounded-lg border border-blue-200 text-blue-800 shadow-sm">The sea turtle is turning around, its body partially occluded by seagrass.</div>
+                                    <span class="w-12 text-blue-500 font-mono font-bold shrink-0">00:56</span>
+                                    <div class="w-3 h-3 rounded-full bg-blue-500 mx-3 ring-4 ring-blue-100 shrink-0"></div>
+                                    <div class="flex-1 bg-blue-50 p-3 rounded-lg border border-blue-200 text-blue-800 shadow-sm">Mottled brown, flat-bodied sea turtle glides near large, mossy rock, its fins trailing gently over sandy seabed.
+</div>
                                 </div>
+
+                                <!-- 垂直省略号 2 (带有透明度过渡) -->
+                                <div class="flex items-center opacity-50">
+                                    <span class="w-12 shrink-0"></span>
+                                    <div class="w-3 mx-3 shrink-0 flex flex-col items-center space-y-1">
+                                        <div class="w-1 h-1 bg-gray-300 rounded-full"></div>
+                                        <div class="w-1 h-1 bg-gray-300 rounded-full"></div>
+                                        <div class="w-1 h-1 bg-gray-300 rounded-full"></div>
+                                    </div>
+                                    <div class="flex-1"></div>
+                                </div>
+
                                 <div class="flex items-center text-sm opacity-50">
-                                    <span class="w-12 text-gray-400 font-mono">00:08</span>
-                                    <div class="w-3 h-3 rounded-full bg-gray-300 mx-3"></div>
-                                    <div class="flex-1 bg-white p-3 rounded-lg border border-gray-200 text-gray-700">The sea turtle swims into a shadow area, decreasing in contrast.</div>
+                                    <span class="w-12 text-gray-400 font-mono shrink-0">01:44</span>
+                                    <div class="w-3 h-3 rounded-full bg-gray-300 mx-3 shrink-0"></div>
+                                    <div class="flex-1 bg-white p-3 rounded-lg border border-gray-200 text-gray-700">Greenish-brown, patterned turtle rests on sandy seabed, nestled between two large, textured rocks.</div>
                                 </div>
                             </div>
                         </div>
